@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('/public/images/crystal_palace.1.jpeg'); /* Ensure this path is correct */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Ensures the background image stays fixed when scrolling */
+    background-position: center; /* Centers the background image */
+    backface-visibility: visible;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(125, 58, 135, 0.8); /* Adds a semi-transparent background to container */
+    border-radius: 5px;
+    color: #f9a0d9; /* Text color for container */
+}
+
+.jumbotron {
+    background-color: rgba(156, 30, 223, 0.5);
+    color: #fff;
+    padding: 100px 0;
+    margin: 0;
+    text-align: center;
+    backface-visibility: visible;
+    background-blend-mode: overlay;
+    background-image: inherit;
+    background-size: cover;
+}

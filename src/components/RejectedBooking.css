@@ -1,0 +1,129 @@
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  
+  .admin-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .admin-table th {
+    background-color: #dc3545;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .admin-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .admin-navbar {
+    background-color: #343a40;
+    padding: 1rem;
+    color: #fff;
+    width: 250px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    transition: left 0.3s ease; /* Add transition */
+  }
+  
+  .admin-navbar h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .admin-navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    margin: 0.5rem 0;
+  }
+  
+  .admin-navbar a:hover {
+    background-color: #495057;
+    color: #fff;
+  }
+  
+  .admin-navbar.open {
+    left: 0; /* Slide in when open */
+  }
+  
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+  }
+  
+  .toggle-button span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s;
+  }
+  
+  .admin-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 2rem;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .admin-container.open .admin-content {
+    margin-left: 250px;
+  }
+  
+  .admin-container:not(.open) .admin-content {
+    margin-left: 0;
+  }
+  
